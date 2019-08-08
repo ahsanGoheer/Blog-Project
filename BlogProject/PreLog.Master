@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PreLog.master.cs" Inherits="TwichBlog.PreLog" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"/>
+   <link href="mycss.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="Images/cat.png"/>
+   
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="container">
+       <!-- Navigation bar-->
+	<nav class="navbar navbar-dark navbar-expand-lg navbar-bgcustom">
+		<a class="navbar-brand"><i class="fas fa-cat navbar-brand"></i>Twich</a>
+		<!--Toggler button-->
+		<button  class="navbar-toggler" data-toggle="collapse" data-target="#Navbar-contents"><span class="navbar-toggler-icon"></span></button>
+		<div class="collapse navbar-collapse" id="Navbar-contents">
+			<ul class="navbar-nav ml-auto">
+			<li class="nav-item"><a class="nav-link" href="Index.aspx">Home</a></li>
+			<li class="nav-item"><a class="nav-link" href="Signup.aspx">Sign up</a></li>
+			<li class="nav-item"><a class="nav-link" href="Services.aspx">Services</a></li>
+			<li class="nav-item"><a class="nav-link" href="ContactUs.aspx">Contact Us</a></li>
+			</ul>
+		</div>	
+	</nav>
+	<!--Navigation bar Ends Here-->
+         <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        </form>
+    <!--Footer Starts Here-->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6">
+                    <i class="fas fa-cat fa-3x"></i>
+                    <br />
+                    <label>TWICH</label>
+                </div>
+                <div class="col-6 pt-5 d-flex justify-content-center">
+                    <ul class="list-unstyled foot-list">
+                    <h4>Links</h4>
+                    <hr class="clearfix w-25 d-md-none"/>
+                    <li><a href="Index.aspx">Home</a></li>
+                    <li><a href="SignUp.aspx">Sign Up</a></li>
+                    <li><a href="Services.aspx">Services</a></li>
+                    <li><a href="ContactUs.aspx">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row justify-content-center pt-3 footer-copy">
+                <p>&copy;Copyright 2019: WOLFPACK</p>
+            </div>
+        </div>
+    </footer>
+    <!--Footer Ends Here-->
+    </div>
+     <script src="http://code.jquery.com/jquery-3.3.1.slim.min.js"></script>	
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+﻿.navbar-optclr {
+    color: azure;
+}
+
+.navbar-bgcustom {
+    background-color: #3C0B23;
+    color: azure;
+}
+
+.banner
+{
+    border:2px solid white;
+}
+
+
+.ser_style {
+    color: black;
+    padding-top: 6%;
+}
+
+.footer_style {
+    margin-top: 15%;
+}
+
+    .footer_style p {
+        border: 1px groove;
+        background: rgba(75, 11, 11,0.8);
+        text-align: center;
+        color: azure;
+    }
+
+
+.blog_name {
+    padding-top: 10px;
+    margin-top: 5%;
+    border: 2px groove;
+}
+
+.blog_post {
+    padding: 10px;
+    margin-top: 10px;
+    height: 500px;
+}
+
+.author_card {
+    margin-top: 10px;
+    padding: 10px;
+    height: 400px;
+}
+
+.comment_card {
+    margin-top: 10px;
+    padding: 10px;
+    height: 300px;
+}
+
+.pagenav {
+    margin-top: 5%;
+}
+
+
+
+#authorimg {
+    margin-left: 30%;
+}
+
+    #authorimg img {
+        height: 85%;
+        width: 55%;
+    }
+
+#header-content {
+    border-bottom: groove;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+}
+
+.sidebar-component {
+    margin-left: 3%;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#author_dp {
+    display: flex;
+    min-width: 150px;
+    max-width: 250px;
+}
+
+#profile_details {
+    margin-top: 10%;
+    margin-bottom:10%;
+}
+
+#detail_box {
+    color: white;
+    padding: 10px;
+    border: 2px dashed rgba(218,189,33,0.90);
+    border-radius: 5px;
+    background-color: #262626;
+}
+
+#write_post {
+    margin-top: 5%;
+}
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    position: static;
+    background-color: #3C0B23;
+    color: azure;
+    font-family: 'Segoe UI';
+    border: 2px solid black;
+    margin-top: 10px;
+}
+
+.footer-copy {
+    background-color: gainsboro;
+    color: black;
+}
+
+.foot-list {
+    font-family: 'Agency FB';
+}
+
+    .foot-list a {
+        color: blanchedalmond;
+    }
+
+#container {
+    min-height: 100%;
+    position: relative;
+}
+
+.post
+{
+    margin-top:30px;
+    margin-bottom:30px;
+    border: 1px groove lightgray;
+    border-radius: 25px;
+    height: 80%;
+    width: 83.3%;
+}

@@ -1,0 +1,232 @@
+.navbar-optclr
+{
+    color: azure;
+}
+
+.navbar-bgcustom
+{
+	background-color:#3C0B23;
+	color: azure;
+}
+.page_bg 
+{
+    background-image: url("E:\TwichBlog\TwichBlog\Images\alphabets-ancient-box-529926.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 125vh;
+    background-size: cover;
+}
+#signup_bg
+{
+	background-image: url("../Images/antique-blank-camera-269810.jpg");
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 150vh;
+	background-size:cover;
+	
+
+}
+#Contact_bg
+{
+    background-image:url("../Images/cable-call-communication-33999.jpg");
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 120vh;
+	background-size:cover;
+}
+#services_bg
+{
+	
+	background-color: rgba(243,239,224,1);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 120vh;
+	background-size:cover;	
+}
+.form-box
+{
+	color: azure;
+	-webkit-box-shadow: 9px -4px 33px -6px rgba(0,0,0,1);
+	-moz-box-shadow: 9px -4px 33px -6px rgba(0,0,0,1);
+	box-shadow: 9px -4px 33px -6px rgba(0,0,0,1);
+	background-color: rgba(75, 11, 11,0.8);
+	padding:50px 60px;
+	
+	border-radius: 10px;
+
+}
+.ser_style
+{	
+	color:black;
+	padding-top:6%;
+	
+}
+.footer_style
+{
+	margin-top: 15%;
+}
+.footer_style p
+{
+	border:1px groove;
+	background: rgba(75, 11, 11,0.8);
+	text-align: center;
+	color: azure;
+}
+
+
+.myContact {
+    border: groove;
+    margin-top: 15%;
+    font-family: monospace;
+    border-radius: 5px;
+    margin-bottom: 50%;
+    color: brown;
+    background-color: lavenderblush;
+    box-shadow: rgba(0,0,0,1);
+}
+.myContact p
+{
+    font-size: 20px;
+    font-style: normal;
+    text-align: center;
+    
+}
+.myContact h1
+{
+	text-align: center;
+}
+.blog_name
+{
+	
+	padding-top:10px;
+	margin-top: 5%;
+	border:2px groove;
+	
+}
+.blog_post
+{
+	padding: 10px;
+	margin-top: 10px;
+	height: 500px;
+}
+.author_card
+{
+	margin-top:10px;
+	padding:10px;
+	height:350px;
+}
+.comment_card
+{
+	margin-top:10px;
+	padding:10px;
+	height:300px;
+	
+}
+.pagenav
+{
+	margin-top: 5%;
+}
+.postspage_bg
+{
+	background-color: rgba(243,239,224);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 120vh;
+	background-size:cover;	 
+}
+#authorimg
+{
+	
+	margin-left: 30%;
+}
+#authorimg img
+{
+	height: 85%;
+	width:55%;
+}
+#header-content
+{
+	border-bottom:groove;
+}
+#sidebar
+{
+	min-width: 250px;
+	max-width: 250px;
+}
+.sidebar-component
+{
+	margin-left: 3%;
+}
+.wrapper
+{
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+#author_dp
+{
+	display: flex;
+	min-width: 150px;
+	max-width: 250px;
+	
+}
+#profile_details
+{
+	margin-top: 10%;
+	
+}
+#detail_box
+{
+	color: white;
+	padding:10px;
+	border:2px dashed rgba(218,189,33,0.90);
+	border-radius:5px;
+	background-color: #262626;
+	
+}
+#write_post
+{
+	margin-top: 5%;	
+}
+.footer
+{
+    bottom: 0;
+    width: 100%;
+    position: static;
+    background-color: #3C0B23;
+    color: azure;
+    font-family: 'Segoe UI';
+    border: 2px solid black;
+    margin-top:10px;
+}
+.footer-copy
+{
+    background-color:gainsboro;
+    color:black;
+}
+.foot-list
+{
+    
+    font-family:'Agency FB';
+}
+
+.foot-list a
+{
+    color:blanchedalmond;
+}
+
+#container {
+    min-height: 100%;
+    position: relative;
+}
+
+
+/*MEDIA QUERY*/
+
+@media only screen and (min-width:768px)
+{
+    .footer
+    {
+        position:absolute;
+    }
+}

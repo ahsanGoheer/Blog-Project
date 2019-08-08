@@ -1,0 +1,112 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PostLog.master.cs" Inherits="BlogProject.PostLog" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"/>
+    <link href="PostLogin.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="Images/cat.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/froala-editor@2.9.3/css/froala_editor.min.css" rel="stylesheet" type="text/css" />
+<link href="https://cdn.jsdelivr.net/npm/froala-editor@2.9.3/css/froala_style.min.css" rel="stylesheet" type="text/css" />
+     
+    <title></title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+     
+    <!--Page Content Starts Here-->
+    <form id="form1" runat="server">
+        <!-- Navigation bar-->
+	<nav class="navbar navbar-dark navbar-expand navbar-bgcustom">
+		<a class="navbar-brand" href="Wall.aspx"><i class="fas fa-cat navbar-brand"></i>Twich</a>
+		<!--Toggler button-->
+		<div class="collapse navbar-collapse">
+			<ul class="navbar-nav mr-auto">
+			<li class="nav-item"><a class="nav-link" href="PostWrite.aspx">Write a post <i class="fas fa-pen-square"></i></a></li>
+			</ul>
+		</div>
+            
+        <div class="dropdown">
+        <button  class="btn dropdown-toggle" type="button" data-toggle="dropdown" data-target="dropdown-menu"><i class="fas fa-sliders-h" style="color: white;margin-right: 10%;"></i></button>
+        <ul class="dropdown-menu dropdown-menu-right">
+        <li><a class="dropdown-item " href="Wall.aspx">My posts</a></li>
+        <li><a class="dropdown-item" href="Settings.aspx">Profile</a></li>
+        <li><a runat="server" id="logout" onserverclick="logout_click" class="dropdown-item" href="Index.aspx">Logout</a></li>
+        </ul>
+        
+        </div>
+
+	</nav>
+	<!--Navigation bar Ends Here-->
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <!--Page Content Ends Here-->
+
+      <!--Footer Starts Here-->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6">
+                    <i class="fas fa-cat fa-3x"></i>
+                    <br />
+                    <label>TWICH</label>
+                </div>
+                <div class="col-6 pt-5 d-flex justify-content-center">
+                    <ul class="list-unstyled foot-list">
+                    <h4>Links</h4>
+                    <hr class="clearfix w-25 d-md-none"/>
+                    <li><a runat="server" id="home_link" href="Index.aspx">Home</a></li>
+                    <li><a runat="server" id="signup_link" href="Signup.aspx">SignUp</a></li>
+                    <li><a runat="server" id="Services_link" href="Services.aspx">Services</a></li>
+                    <li><a runat="server" id="Contact_link" href="ContactUs.aspx">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row justify-content-center pt-3 footer-copy">
+                <p>&copy;Copyright 2019: WOLFPACK</p>
+            </div>
+        </div>
+    </footer>
+    <!--Footer Ends Here-->
+
+    <!-- Javascript and JQuery CDN-->
+  <script src="http://code.jquery.com/jquery-3.3.1.slim.min.js"></script>	
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@2.9.3/js/froala_editor.min.js"></script>
+	<!--Script for text editor-->
+	<script>
+  $(function() {
+    $('textarea#froala-editor').froalaEditor()
+  });
+    </script>
+	<script>
+  $(function() {
+    $('div#froala-editor').froalaEditor({
+      heightMin: 100,
+      heightMax: 200
+    });
+  });
+</script>
+	<!--Script for validation-->
+	<script>
+		function check_input()
+		{
+			if(document.getElementById("froala-editor").text==""||document.getElementById("post_title").value=="")
+				{
+					alert("Please fill in the missing fields!");
+				}
+			
+		}
+	</script>
+</body>
+</html>
